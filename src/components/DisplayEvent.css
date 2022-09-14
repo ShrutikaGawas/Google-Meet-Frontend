@@ -1,0 +1,23 @@
+.calender-inner{
+    width: 100%;
+}
+.Events{
+    display: flex;
+}
+.card-under-event{
+    display: flex;  
+}
+.upcoming-events{
+    background-color: #C9E2FF;
+    padding:10vh ;
+}
+
+@media screen and (max-width: 1200px) {
+    .Events{
+        flex-direction: column;
+    }
+    .calender-inner{
+        width: 100%
+    }
+
+}

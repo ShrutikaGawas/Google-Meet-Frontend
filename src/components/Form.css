@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.Form-container{
+  align-items: center;
+  justify-content: center;
+}
+.ant-card{
+    border-radius: 20px !important;
+}
+
+.ant-card-body{
+    padding: 50px !important;
+}
+/* .create{
+  margin: 0 auto;
+} */
+.create h2 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Quicksand";
+    color: #112E55;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .date-picker{
+    width: 200px;
+  }
+  .form-card{
+    width:40%;
+    margin:auto !important;
+  }
+  .ant-form-item .ant-form-item-label > label{
+    color: #112E55;
+    font-weight: 800;
+    font-family: "Quicksand";
+  }
+  .ant-input,.ant-picker{
+    border-radius: 5px;
+    border: 1px solid #C5C5C5;
+  }
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    color: #112E55;
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .date-picker{
+        width: 200px;
+      }
+      .form-card{
+        width:80%;}
+  }
