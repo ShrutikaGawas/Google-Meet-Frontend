@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar, Collapse } from "antd";
+import Three_Dots from "../assets/Three_Dots";
 
 import "antd/dist/antd.css";
 import "./DisplayEvent.css";
@@ -19,14 +20,43 @@ const DisplayEvents = () => {
         {/* Just the Events */}
         <h2>Upcoming Events</h2>
         <p>Don't miss scheduled events</p>
-        <Collapse style={{ width: "500px" }} defaultActiveKey={["1"]}>
+        <Collapse
+          expandIconPosition="end"
+          className="collapse-menu"
+          defaultActiveKey={["1"]}
+        >
           <Panel header="This is panel header 1" key="1">
             <p>{text}</p>
           </Panel>
-          <Panel header="This is panel header 2" key="2">
+        </Collapse>
+        <Collapse
+          expandIconPosition="right"
+          className="collapse-menu"
+          defaultActiveKey={["1"]}
+        >
+          <Panel header="This is panel header 1" key="1">
             <p>{text}</p>
           </Panel>
         </Collapse>
+        <Collapse
+          expandIconPosition="right"
+          className="collapse-menu"
+          defaultActiveKey={["1"]}
+        >
+          <Panel header="This is panel header 1" key="1">
+            <p>{text}</p>
+          </Panel>
+        </Collapse>
+        <Collapse
+          expandIconPosition="right"
+          className="collapse-menu"
+          defaultActiveKey={["1"]}
+        >
+          <Panel header="This is panel header 1" key="1">
+            <p>{text}</p>
+          </Panel>
+        </Collapse>
+        
       </div>
 
       <Calendar className="calender-inner" />
@@ -35,3 +65,4 @@ const DisplayEvents = () => {
 };
 
 export default DisplayEvents;
+// 
