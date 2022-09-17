@@ -24,7 +24,7 @@ const DisplayEvents = () => {
       <div className="upcoming-events">
         {/* Just the Events */}
         <div className="profile">
-          <img src='https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=721&q=80' width="13%" height="13%"/>
+          <img src='https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=721&q=80' />
           <div className="profile-details">
           <h4>Shrutika Gawas</h4>
           <p>Student</p>
