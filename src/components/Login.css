@@ -1,93 +1,95 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700&display=swap');
 body {
-  background-color: #C9E2FF;
-    margin: 0;
-  }
-    .Main{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+  background-color: #c9e2ff;
+  margin: 0;
+}
+.Main {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
+.left-inner {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 35%;
+  background: #2069cd;
+  border-radius: 52px 0 0 52px;
+  justify-content: flex-start;
+}
+
+.Logo-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.Logo-img {
+  width: 50px;
+  height: 50px;
+}
+.Logo-text h2 {
+  color: #ffffff;
+}
+.tagline {
+  margin: 20px;
+  width: 80%;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-left: 50px;
+  font-family: "Nunito", sans-serif;
+
+}
+.right-inner {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 50%;
+  background: #ffffff;
+  border-radius: 0px 52px 52px 0px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Meeting-img {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.Login-Button {
+  margin-top: 20px;
+  width: 200px;
+}
+.footer {
+  margin-top: 15%;
+  color: gray;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: #ffffff;
+  }
+  .Main {
+    flex-direction: column;
+  }
   .left-inner {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    width:35%;
-    background: #2069CD;
-    border-radius:  52px 0 0 52px;
-    justify-content:flex-start;
+    width: 90%;
+    background-color: #ffffff;
   }
-
-.Logo-text{
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
-.Logo-text h2{
-    color: #ffffff;
-}
-.Logo-img{
-    width: 50px;
-    height: 50px;
-}
-.tagline{
-    margin: 20px;
-    width: 80%;
-    color: #ffffff;
-    margin-top: 5px;
-    margin-left: 50px;
-}
-
+  .Logo-text h2 {
+    color: #2069cd;
+    font-size: 42px;
+  }
+  .tagline {
+    text-align: center;
+    color: #2069cd;
+    font-family: "Nunito", sans-serif;
+  }
   .right-inner {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    width: 50%;
-    background: #ffffff;
-    border-radius: 0px 52px 52px 0px;
-    justify-content: flex-start;
-    align-items: center;  }
-    .Meeting-img{
-        margin-top: 50px;
-        margin-bottom: 40px;
-    }
-    .Login-Button{
-        margin-top: 20px;
-        width: 200px;
-    }
-    .footer{
-        margin-top: 15%;
-        color: gray;
-    }
-    
-
-  @media screen and (max-width: 1200px) {
-    body{
-        background-color: #ffffff;
-    }
-    .Main{
-        flex-direction: column;
-    }
-    .left-inner {
-        width:90%;
-        background-color: #ffffff;
-      }
-      .Logo-text h2{
-        color: #2069CD;
-        font-size: 42px;
-    }
-    .tagline{
-        text-align: center;
-        color: #2069CD;
-    }
-      .right-inner{
-        width:90%;
-        background-color: #ffffff;
-      }
+    width: 90%;
+    background-color: #ffffff;
+  }
 }

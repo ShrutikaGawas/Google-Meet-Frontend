@@ -2,17 +2,16 @@ import { GoogleLogin } from "react-google-login";
 import { gapi } from "gapi-script";
 import { React, useEffect, useState } from "react";
 import axios from "axios";
-
 import "antd/dist/antd.css";
 import "./Login.css";
-
 import Meeting from "../assets/Meeting.svg";
 import Logo from "../assets/Logo.svg";
 
 function Login() {
-  const clientId =
-    "228739963998-qnmhjj4od8as8grd8jtg55gnm2jedh3n.apps.googleusercontent.com";
-  useEffect(() => {
+
+  const clientId ="228739963998-qnmhjj4od8as8grd8jtg55gnm2jedh3n.apps.googleusercontent.com";
+  
+    useEffect(() => {
     const initClient = () => {
       gapi.client.init({
         clientId: clientId,
@@ -32,9 +31,10 @@ function Login() {
       .post("/api/create-tokens", { code })
       .then((response) => {
         console.log(response.data);
-      })
+      }) 
       .catch((error) => console.log(error.message));
   };
+  
   const onFailure = (error) => {
     console.log(error);
   };
@@ -43,6 +43,7 @@ function Login() {
     <>
       <div className="Main">
         {/* Blue Area/Description */}
+
         <div className="left-inner">
           <div className="Logo-text">
             <img className="Logo-img" src={Logo} />

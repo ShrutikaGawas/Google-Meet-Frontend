@@ -7,15 +7,16 @@ import Navigation from "./Navigation";
 import Logo from "../assets/Logo";
 import Form from "./Form";
 import DisplayEvents from "./DisplayEvents";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 const Events = () => {
-  return (
+  return ( 
     <>
       <Layout hasSider>
         {/* <div className="logo-section">
           <Logo />
         </div> */}
+        
         <Sider
           width={80}
           style={{backgroundColor:'#C9E2FF'}}
@@ -31,12 +32,10 @@ const Events = () => {
         </Sider>
 
         <Content>
-          <BrowserRouter>
             <Routes>
               <Route path="Events/DisplayEvents" element={<DisplayEvents />} />
               <Route path="Events/Form" element={<Form />} />
             </Routes>
-          </BrowserRouter>
         </Content>
       </Layout>
     </>

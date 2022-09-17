@@ -1,18 +1,21 @@
 body {
-    background-color: #C9E2FF;
-    margin: 0;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 36px;
-    width: 48px;  
-    margin-top: 20px;
-  }
- 
-  .Navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  background-color: #C9E2FF;
+  margin: 0;
+}
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 48px;
+  margin-top: 20px;
+}
+
+.active svg {
+  fill: rgb(1, 0, 81);
+}
