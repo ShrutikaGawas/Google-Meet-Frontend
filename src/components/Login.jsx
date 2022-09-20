@@ -1,31 +1,32 @@
 import { GoogleLogin } from "react-google-login";
 import { gapi } from "gapi-script";
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useContext  } from "react";
 import axios from "axios";
 import "antd/dist/antd.css";
 import "./Login.css";
 import Meeting from "../assets/Meeting.svg";
 import Logo from "../assets/Logo.svg";
+import { LoginContext } from "../context/LoginContext";
 
 function Login() {
 
-  const clientId ="228739963998-qnmhjj4od8as8grd8jtg55gnm2jedh3n.apps.googleusercontent.com";
+  const clientId ="287083386098-eesnfut6qrednnd4ht4rpgl16hrhhml5.apps.googleusercontent.com";
   
     useEffect(() => {
     const initClient = () => {
       gapi.client.init({
         clientId: clientId,
-        scope: "https://www.googleapis.com/auth/calendar",
+        scope: "https://www.googleapis.com/auth/calendar", 
       });
     };
     gapi.load("client:auth2", initClient);
   });
 
-  const [LoggedIn, setLoggedIn] = useState("false");
+  const {setShowProfile} = useContext(LoginContext);
 
   const onSuccess = (response) => {
     console.log(response);
-    setLoggedIn("true");
+    setShowProfile(true);
     const { code } = response;
     axios
       .post("/api/create-tokens", { code })
@@ -58,10 +59,10 @@ function Login() {
           </h3>
         </div>
 
-        {/* White Area/Meeting Image/Login Button  */}
+        {/* White Area/Meeting Image/Login Button  */} 
         <div className="right-inner">
           <img className="Meeting-img" src={Meeting} />
-          <h1>Sign In {LoggedIn}</h1>
+          <h1>Sign In</h1>
           <GoogleLogin
             className="Login-Button"
             clientId={clientId}

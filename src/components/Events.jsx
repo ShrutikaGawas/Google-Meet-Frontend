@@ -33,7 +33,7 @@ const Events = () => {
 
         <Content>
             <Routes>
-              <Route path="Events/DisplayEvents" element={<DisplayEvents />} />
+              <Route index path="Events/DisplayEvents" element={<DisplayEvents />} />
               <Route path="Events/Form" element={<Form />} />
             </Routes>
         </Content>
